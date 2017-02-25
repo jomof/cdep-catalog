@@ -1,0 +1,9 @@
+language: script
+script:
+- wget https://github.com/jomof/cdep/releases/download/alpha-0.0.68/redist.zip
+- unzip redist.zip
+- redist/cdep wrapper
+- ./cdep create hashes
+- cat cdep.sha256
+- ./cdep
+
