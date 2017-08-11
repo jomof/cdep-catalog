@@ -1,5 +1,6 @@
 language: script
 script:
+- ./cdep --version
 - mkdir redist && cd redist
 - wget https://github.com/jomof/cdep/releases/download/alpha-0.0.226/redist.zip
 - unzip redist.zip
